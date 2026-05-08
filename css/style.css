@@ -249,7 +249,7 @@ strong {
 ========================= */
 .page-ministry .hero {
   display: grid;
-  grid-template-columns: 1fr 33%;
+  grid-template-columns: 33% 1fr;
   min-height: 100vh;
 }
 
@@ -264,8 +264,8 @@ strong {
 .page-ministry .hero-photo {
   background: url("/assets/images/ministry.JPG") center top / cover no-repeat;
   filter: grayscale(1);
-  margin-right: 40px;
-  border-radius: 0 0 0 12px;
+  margin-left: 40px;
+  border-radius: 0 0 12px 0;
 }
 
 .page-ministry .hero-content {
@@ -718,7 +718,6 @@ strong {
   .page-ministry .hero-photo {
     height: 0;
     padding-bottom: 100%;
-    order: -1;
   }
 
   .page-ministry .hero-left {
