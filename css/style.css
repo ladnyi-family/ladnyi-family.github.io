@@ -489,16 +489,6 @@ strong {
   position: relative;
 }
 
-.partner-collected-tick {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 3px;
-  height: 20px;
-  background: #c8920a;
-  border-radius: 2px;
-  pointer-events: none;
-}
 
 .partner-slider-label {
   font-size: 1.1rem;
