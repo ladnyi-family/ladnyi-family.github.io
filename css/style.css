@@ -458,6 +458,67 @@ strong {
 }
 
 /* =========================
+   SUBSCRIBE FORM
+========================= */
+.subscribe-form {
+  margin-top: 24px;
+}
+
+.subscribe-form input[type="email"],
+.subscribe-form input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  background: #fff;
+  transition: border-color 0.2s ease;
+  box-sizing: border-box;
+}
+
+.subscribe-form input:focus {
+  outline: none;
+  border-color: #1a1f36;
+}
+
+.subscribe-form input::placeholder {
+  color: #aaa;
+}
+
+.subscribe-form button[type="submit"] {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 14px 32px;
+  background: #f9b625;
+  border: 2px solid #f9b625;
+  color: #1a1a2e;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribe-honeypot {
+  position: absolute;
+  left: -5000px;
+}
+
+.subscribe-form button[type="submit"]:hover {
+  background: #e0a31f;
+  border-color: #e0a31f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(249, 182, 37, 0.45);
+}
+
+/* =========================
    SHARED COMPONENTS
 ========================= */
 .amount-pills {
