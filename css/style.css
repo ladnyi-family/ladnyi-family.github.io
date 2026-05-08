@@ -149,7 +149,8 @@ strong {
 }
 
 .page-home .hero-photo {
-  background: url("/assets/images/index.JPG") center center / cover no-repeat;
+  background: url("/assets/images/index.JPG") center 75% / cover no-repeat;
+  filter: grayscale(1);
 }
 
 .page-home .hero-content h1 {
@@ -223,10 +224,13 @@ strong {
 
 .page-about img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center 20%;
   display: block;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  filter: grayscale(1);
 }
 
 .page-about .about-text h1 {
@@ -257,7 +261,8 @@ strong {
 }
 
 .page-ministry .hero-photo {
-  background: url("/assets/images/ministry.JPG") center / cover no-repeat;
+  background: url("/assets/images/ministry.JPG") center top / cover no-repeat;
+  filter: grayscale(1);
 }
 
 .page-ministry .hero-content {
@@ -329,10 +334,13 @@ strong {
 
 .target-life img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center 85%;
   display: block;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  filter: grayscale(1);
 }
 
 .target-life h2 {
@@ -361,7 +369,8 @@ strong {
 }
 
 .page-partner .hero-photo {
-  background: url("/assets/images/partner.jpg") center / cover no-repeat;
+  background: url("/assets/images/partner.jpg") center 15% / cover no-repeat;
+  filter: grayscale(1);
 }
 
 .page-partner .hero-content {
