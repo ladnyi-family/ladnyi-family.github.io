@@ -224,9 +224,7 @@ strong {
 
 .page-about img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
   display: block;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -455,15 +453,16 @@ strong {
 }
 
 .page-partner .full-width-btn {
-  background: #fff;
-  color: #1a1f36;
+  background: #f9b625;
+  border-color: #f9b625;
+  color: #1a1a2e;
 }
 
 .page-partner .full-width-btn:hover {
-  background: #f8f9fa;
-  border-color: #1a1f36;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(26, 31, 54, 0.2);
+  background: #e0a31f;
+  border-color: #e0a31f;
+  color: #1a1a2e;
+  box-shadow: 0 6px 16px rgba(249, 182, 37, 0.45);
 }
 
 /* =========================
