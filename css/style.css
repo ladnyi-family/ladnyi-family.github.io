@@ -151,11 +151,12 @@ strong {
 .page-home .hero-photo {
   background: url("/assets/images/index.JPG") center 75% / cover no-repeat;
   filter: grayscale(1);
-  transition: filter 2.5s ease;
+  transition: filter 0s;
 }
 
 .page-home .hero-photo:hover {
   filter: grayscale(0);
+  transition: filter 2.5s ease;
 }
 
 .page-home .hero-content h1 {
@@ -240,13 +241,14 @@ strong {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   filter: grayscale(1);
-  transition: filter 2.5s ease;
+  transition: filter 0s;
   margin-right: clamp(30px, 5vw, 60px);
   margin-bottom: 24px;
 }
 
 .page-about .about-body img:hover {
   filter: grayscale(0);
+  transition: filter 2.5s ease;
 }
 
 .page-about .about-body p {
@@ -274,13 +276,14 @@ strong {
 .page-ministry .hero-photo {
   background: url("/assets/images/ministry.JPG") center top / cover no-repeat;
   filter: grayscale(1);
-  transition: filter 2.5s ease;
+  transition: filter 0s;
   margin-left: 40px;
   border-radius: 0 0 12px 0;
 }
 
 .page-ministry .hero-photo:hover {
   filter: grayscale(0);
+  transition: filter 2.5s ease;
 }
 
 .page-ministry .hero-content {
@@ -359,11 +362,12 @@ strong {
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   filter: grayscale(1);
-  transition: filter 2.5s ease;
+  transition: filter 0s;
 }
 
 .target-life img:hover {
   filter: grayscale(0);
+  transition: filter 2.5s ease;
 }
 
 .target-life h2 {
@@ -394,11 +398,12 @@ strong {
 .page-partner .hero-photo {
   background: url("/assets/images/partner.jpg") center 15% / cover no-repeat;
   filter: grayscale(1);
-  transition: filter 2.5s ease;
+  transition: filter 0s;
 }
 
 .page-partner .hero-photo:hover {
   filter: grayscale(0);
+  transition: filter 2.5s ease;
 }
 
 .page-partner .hero-content {
