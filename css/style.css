@@ -612,7 +612,7 @@ strong {
    SHARED COMPONENTS
 ========================= */
 .amount-pills {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
@@ -620,8 +620,10 @@ strong {
 }
 
 .amount-pill {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  flex: 1;
   padding: 5px 14px;
   background: #f9b625;
   color: #1a1a2e;
