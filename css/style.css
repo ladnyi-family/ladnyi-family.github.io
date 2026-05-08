@@ -472,11 +472,39 @@ strong {
   margin: 20px 0;
 }
 
+.partner-progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.partner-progress-raised {
+  font-weight: 700;
+  color: #f9b625;
+}
+
+.partner-slider-inner {
+  position: relative;
+}
+
+.partner-collected-tick {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 20px;
+  background: #c8920a;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
 .partner-slider-label {
   font-size: 1.1rem;
   font-weight: 600;
   color: #1a1f36;
-  margin-bottom: 12px;
+  margin-top: 10px;
 }
 
 #partnerSlider {
