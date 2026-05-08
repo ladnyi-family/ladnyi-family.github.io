@@ -213,22 +213,22 @@ strong {
    ABOUT
 ========================= */
 .page-about .about-wrap {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: clamp(40px, 6vw, 80px);
   padding: 100px 8%;
+  align-items: start;
   max-width: 1400px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .page-about img {
-  float: left;
-  width: 50%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   filter: grayscale(1);
-  margin-right: clamp(30px, 5vw, 60px);
-  margin-bottom: 24px;
 }
 
 .page-about .about-text h1 {
@@ -693,13 +693,9 @@ strong {
 
   /* ABOUT */
   .page-about .about-wrap {
+    grid-template-columns: 1fr;
     padding: 60px 6%;
-  }
-
-  .page-about img {
-    float: none;
-    width: 100%;
-    margin-right: 0;
+    gap: 40px;
   }
 
   /* MINISTRY */
