@@ -44,12 +44,31 @@
 
       <p>
         By the end of 2026, we are seeking to build a full support team of <strong>$2,800 a month</strong> to reach people across Moldova.
-        Choose an amount God leads you to give:
+        We invite you to join us with a monthly investment of
       </p>
+      <div class="amount-pills">
+        <a class="amount-pill"
+           href="https://give.cru.org/1097073?modal=give-gift&d=1097073&a=100&f=MON"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Give $100 monthly">$100</a>
+        <a class="amount-pill"
+           href="https://give.cru.org/1097073?modal=give-gift&d=1097073&a=250&f=MON"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Give $250 monthly">$250</a>
+        <a class="amount-pill"
+           href="https://give.cru.org/1097073?modal=give-gift&d=1097073&a=500&f=MON"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Give $500 monthly">$500</a>
+        <a class="amount-pill"
+           href="https://give.cru.org/1097073?modal=give-gift&d=1097073&a=1000&f=MON"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="Give $1000 monthly">$1,000</a>
+      </div>
+      <p>or an amount God leads you to give.</p>
 
       <div class="partner-slider-wrap">
-        <div class="partner-slider-label">$<span id="sliderAmount">100</span> / month</div>
-        <input type="range" id="partnerSlider" min="25" max="1000" step="25" value="100" aria-label="Monthly giving amount">
+        <div class="partner-slider-label">$<span id="sliderAmount">0</span> / month</div>
+        <input type="range" id="partnerSlider" min="0" max="2800" step="25" value="0" aria-label="Monthly giving amount">
       </div>
 
       <p>
@@ -60,11 +79,11 @@
       <div class="buttons">
         <div class="button-row">
           <a id="giveBtn"
-             href="https://give.cru.org/1097073?modal=give-gift&d=1097073&a=100&f=MON"
+             href="https://give.cru.org/1097073"
              target="_blank"
              rel="noopener noreferrer"
-             aria-label="Become a monthly partner">
-             Become a partner for $100/mo
+             aria-label="Give financial support online through Cru">
+             Give Online
           </a>
         </div>
         <p><em>Subscribe to our newsletter to see how God is changing lives in Moldova and pray with us.</em></p>
@@ -83,26 +102,30 @@
 <script src="js/nav.js"></script>
 <script>
   (function () {
-    const initialAmount = 100; // 🔴 CHANGE THIS to set default slider position
     const slider = document.getElementById('partnerSlider');
     const amountLabel = document.getElementById('sliderAmount');
     const giveBtn = document.getElementById('giveBtn');
     const BASE_URL = 'https://give.cru.org/1097073?modal=give-gift&d=1097073&a=';
 
-    function updateSlider(amount) {
+    function updateTrack(amount) {
       const pct = ((amount - slider.min) / (slider.max - slider.min)) * 100;
       slider.style.background =
         'linear-gradient(to right, #f9b625 ' + pct + '%, #e5e5e5 ' + pct + '%)';
       amountLabel.textContent = amount;
-      giveBtn.textContent = 'Become a partner for $' + amount + '/mo';
-      giveBtn.href = BASE_URL + amount + '&f=MON';
     }
 
-    slider.value = initialAmount;
-    updateSlider(initialAmount);
+    updateTrack(parseInt(slider.value, 10));
 
     slider.addEventListener('input', function () {
-      updateSlider(parseInt(this.value, 10));
+      const amount = parseInt(this.value, 10);
+      updateTrack(amount);
+      if (amount > 0) {
+        giveBtn.textContent = 'Become a partner for $' + amount + '/mo';
+        giveBtn.href = BASE_URL + amount + '&f=MON';
+      } else {
+        giveBtn.textContent = 'Give Online';
+        giveBtn.href = 'https://give.cru.org/1097073';
+      }
     });
   })();
 </script>
