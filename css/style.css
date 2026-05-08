@@ -452,17 +452,76 @@ strong {
   box-shadow: 0 6px 16px rgba(249, 182, 37, 0.45);
 }
 
-.page-partner .full-width-btn {
+.page-partner .buttons a.full-width-btn {
   background: #f9b625;
   border-color: #f9b625;
   color: #1a1a2e;
 }
 
-.page-partner .full-width-btn:hover {
+.page-partner .buttons a.full-width-btn:hover {
   background: #e0a31f;
   border-color: #e0a31f;
   color: #1a1a2e;
   box-shadow: 0 6px 16px rgba(249, 182, 37, 0.45);
+}
+
+/* =========================
+   PARTNER SLIDER
+========================= */
+.partner-slider-wrap {
+  margin: 20px 0;
+}
+
+.partner-slider-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1f36;
+  margin-bottom: 12px;
+}
+
+#partnerSlider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(to right, #f9b625 0%, #e5e5e5 0%);
+  outline: none;
+  cursor: pointer;
+}
+
+#partnerSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f9b625;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#partnerSlider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(249, 182, 37, 0.5);
+}
+
+#partnerSlider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f9b625;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  cursor: pointer;
+}
+
+#partnerSlider::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: #e5e5e5;
 }
 
 /* =========================
