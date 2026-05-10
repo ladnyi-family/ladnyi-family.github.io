@@ -1,3 +1,9 @@
-assets/.DS_Store
+# macOS
 .DS_Store
+**/.DS_Store
+
+# Claude
 .claude/
+
+# Working/draft images (not ready to publish)
+assets/images/about_old.JPG
