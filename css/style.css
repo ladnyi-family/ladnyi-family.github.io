@@ -274,7 +274,7 @@ strong {
 }
 
 .page-ministry .hero-photo {
-  background: url("/assets/images/ministry.JPG") center top / cover no-repeat;
+  background: url("/assets/images/ministry.jpeg") center center / cover no-repeat;
   filter: grayscale(1);
   transition: filter 0s;
   margin-left: 40px;
