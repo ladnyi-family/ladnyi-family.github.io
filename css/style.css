@@ -277,8 +277,7 @@ strong {
   background: url("/assets/images/ministry.jpeg") center center / cover no-repeat;
   filter: grayscale(1);
   transition: filter 0s;
-  margin-left: 40px;
-  border-radius: 0 0 12px 0;
+  border-radius: 0 0 0 12px;
 }
 
 .page-ministry .hero-photo:hover {
@@ -795,6 +794,7 @@ strong {
   .page-ministry .hero-photo {
     height: 0;
     padding-bottom: 100%;
+    order: -1;
   }
 
   .page-ministry .hero-left {
