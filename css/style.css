@@ -260,12 +260,15 @@ strong {
    MINISTRY
 ========================= */
 .page-ministry .hero {
-  display: grid;
-  grid-template-columns: 33% 1fr;
+  position: relative;
   min-height: 100vh;
 }
 
 .page-ministry .hero-left {
+  position: relative;
+  z-index: 1;
+  width: 40%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,10 +277,11 @@ strong {
 }
 
 .page-ministry .hero-photo {
+  position: absolute;
+  inset: 0;
   background: url("/assets/images/ministry.jpeg") center center / cover no-repeat;
   filter: grayscale(1);
   transition: filter 0s;
-  border-radius: 0 0 0 12px;
 }
 
 .page-ministry .hero-photo:hover {
@@ -787,17 +791,19 @@ strong {
 
   /* MINISTRY */
   .page-ministry .hero {
-    grid-template-columns: 1fr;
-    min-height: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .page-ministry .hero-photo {
-    height: 0;
-    padding-bottom: 100%;
-    order: -1;
+    position: static;
+    height: 280px;
+    flex-shrink: 0;
   }
 
   .page-ministry .hero-left {
+    width: 100%;
+    min-height: 0;
     padding: 40px 6%;
   }
 
