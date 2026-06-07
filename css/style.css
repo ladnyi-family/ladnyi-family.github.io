@@ -329,6 +329,42 @@ strong {
 }
 
 /* =========================
+   MINISTRY VIDEO
+========================= */
+.ministry-video {
+  padding: 80px 8%;
+  background: #f8f9fa;
+}
+
+.ministry-video-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.ministry-video-inner h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.video-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* =========================
    TARGET LIFE
 ========================= */
 .target-life {
