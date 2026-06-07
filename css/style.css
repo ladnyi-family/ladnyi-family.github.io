@@ -70,6 +70,33 @@ nav.nav-hovered a.active::after {
   pointer-events: none;
 }
 
+.nav-lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding-left: 20px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lang-btn {
+  font-size: 1.25rem;
+  line-height: 1;
+  text-decoration: none;
+  opacity: 0.35;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.lang-btn:hover {
+  opacity: 0.7;
+}
+
+.lang-btn.lang-active {
+  opacity: 1;
+}
+
 nav a.nav-give {
   background: #1a1f36;
   color: #fff;

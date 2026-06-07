@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('nav a:not(.nav-give)');
+  const links = document.querySelectorAll('nav a:not(.nav-give):not(.lang-btn):not(.lang-btn)');
 
   const strokes = [
     { d: 'M2,6 Q25,3 50,6 Q75,9 98,6',   delay: 0,    duration: 320 },
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   nav.addEventListener('mouseover', (e) => {
-    const link = e.target.closest('nav a:not(.nav-give)');
+    const link = e.target.closest('nav a:not(.nav-give):not(.lang-btn)');
     if (!link) return;
 
     links.forEach(l => {
